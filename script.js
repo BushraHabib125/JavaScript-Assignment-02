@@ -1,80 +1,72 @@
-// let numbers = [4,20,48,5,-3,63,-8,-72,90]
+// Question 01
+let marks = [70, 80, 65, 90, 85];
+let total = 0;
 
-// for(var i = 0; i< numbers.length; i++){
-//     if(numbers[i]>=0){
-//         console.log(`${numbers[i]} is positive`)
-//     }else{
-//         console.log(`${numbers[i]} is negative`)
-//     }
-// }
+for(i=0; i<marks.length; i++){
+    total = total + marks[i]
+    console.log(total)
+}
 
-// let names = ['Sana', 'Ayesha', 'Haniya', 'Amna']
+// Question 02
+let arr = [12, 45, 2, 99, 34, 5]
 
-// for( var i = 0; i< names.length; i++){
-//     console.log('Good Morning', names[i])
-// }
+let max = arr[0]
+let min = arr[0]
 
-// let marks = [70, 80, 65, 90, 85];
-// let total = 0;
+for(i=1; i<arr.length; i++){
+    if(arr[i]> max){
+        max = arr[i]
+    }
 
-// for(i=0; i<marks.length; i++){
-//     total = total + marks[i]
-//     console.log(total)
-// }
+    if(arr[i]< min){
+        min = arr[i]
+    }
+    console.log("maximum :", max)
+    console.log("minimum :", min)
+}
 
-// let arr = [12, 45, 2, 99, 34, 5]
+// Question 03
+let names = ["Ali", "Ahmed", "Sara", "Fatima"]
 
-// let max = arr[0]
-// let min = arr[0]
+let reverse = []
 
-// for(i=1; i<arr.length; i++){
-//     if(arr[i]> max){
-//         max = arr[i]
-//     }
+for(let i = names.length-1; i>=0 ;i--){
+    reverse.push(names[i])
+    console.log(reverse)
+}
 
-//     if(arr[i]< min){
-//         min = arr[i]
-//     }
-//     console.log("maximum :", max)
-//     console.log("minimum :", min)
-// }
+// Question 04
+ let students = ["Zaid", "Hania", "Umar", "Hania", "Aiman"]
+ let count = 0;
+ for(i = 0; i<students.length; i++){
+    if(students[i]=== "Hania"){
+        count++;
+    }
+ }
 
+ console.log(count)
 
-// let names = ["Ali", "Ahmed", "Sara", "Fatima"]
+// Question 05
+let fruits = ["Apple", "Banana", "Guava"];
+fruits.push("Mango")
+console.log(fruits)
+fruits.pop()
+console.log(fruits)
 
-// let reverse = []
+// Question 06
 
-// for(let i = names.length-1; i>=0 ;i--){
-//     reverse.push(names[i])
-//     console.log(reverse)
-// }
+let cities = ["Karachi", "Lahore", "Islamabad"];
+cities.unshift("Quetta")
+console.log(cities)
+cities.shift()
+console.log(cities)
 
-//  let students = ["Zaid", "Hania", "Umar", "Hania", "Aiman"]
-//  let count = 0;
-//  for(i = 0; i<students.length; i++){
-//     if(students[i]=== "Hania"){
-//         count++;
-//     }
-//  }
+// Question 07
+let colors = ["Red", "Blue", "Yellow", "Green", "Black"] 
+colors.splice(2,1,"White", "Purple")
+console.log(colors)
 
-//  console.log(count)
-
-// let fruits = ["Apple", "Banana", "Guava"];
-// fruits.push("Mango")
-// console.log(fruits)
-// fruits.pop()
-// console.log(fruits)
-
-// let cities = ["Karachi", "Lahore", "Islamabad"];
-// cities.unshift("Quetta")
-// console.log(cities)
-// cities.shift()
-// console.log(cities)
-
-// let colors = ["Red", "Blue", "Yellow", "Green", "Black"] 
-// colors.splice(2,1,"White", "Purple")
-// console.log(colors)
-
+// Question 08
 let items = ["Pen", "Book", "Copy", "Pencil", "Eraser", "Sharpener"]
 
 let newarr = items.slice(1,5)
